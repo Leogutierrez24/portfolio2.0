@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');
+@import './components/assets/scss/variables';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(40deg, rgb(24, 24, 24) 0%, rgb(14 14 14) 50%, rgb(50 50 50) 100%);
+    color: $text-color;
+}

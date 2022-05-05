@@ -1,0 +1,58 @@
+@import "../assets/scss/variables";
+
+.topNav-container{
+    width: 100%;
+    height: 100px;
+    padding: 0 60px;
+    font-family: $text-font;
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.navBar{
+    width: 80%;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navContact{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: $text-color;
+    text-decoration: none;
+    &:hover {
+        color: $red-color;
+        transition: .2s ease;
+    }
+    &:active {
+        background-color: #5050508a;
+    }
+}
+
+.nav-button {
+    padding: 3px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: $text-color;
+    letter-spacing: 1px;
+    background-color: $red-color;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    &:hover {
+        transition: .2s ease-in-out;
+        background: transparent;
+        border: 1px solid $red-color;
+        color: $red-color;
+    }
+}
