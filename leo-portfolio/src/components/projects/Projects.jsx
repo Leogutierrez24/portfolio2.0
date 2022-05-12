@@ -8,13 +8,13 @@ const Projects = () => {
             <div className="projects-container">
                 <h3 className="projects-title">My <span>Projects</span></h3>
                 <div className="projects-list">
-                    <div className="project">
+                    <div className="project01">
                         <Link to="/" className="projects-links">See project</Link>
                     </div>
-                    <div className="project">
-                        <Link to="/" className="projects-links">See project</Link>
+                    <div className="project02">
+                        <a href="https://github.com/Leogutierrez24/calculator" className="projects-links">See project</a>
                     </div>
-                    <div className="project">
+                    <div className="project03">
                         <Link to="/" className="projects-links">See project</Link>
                     </div>
                 </div>

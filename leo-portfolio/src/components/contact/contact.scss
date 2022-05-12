@@ -1,0 +1,76 @@
+@import "../assets/scss/variables";
+
+.contact {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 100px 100px 0 100px;
+    background-color: transparent;
+}
+
+#contact-form {
+   display: flex;
+   flex-direction: column;
+   > label {
+       @include titles($text-font, 1.3rem, 1px, $text-color);
+       > input {
+           width: 260px;
+           height: 30px;
+           padding-left: 5px;
+           border: none;
+           border-radius: 3px;
+           background-color: $text-color;
+           outline: none;
+           font-family: $text-font;
+       }
+       > textarea {
+           width: 400px;
+           height: 120px;
+           padding-left: 5px;
+           border: none;
+           border-radius: 3px;
+           background-color: $text-color;
+           outline: none;
+           font-family: $text-font;
+       }
+   }
+}
+
+.contact-title {
+    margin: 0 0 50px 0;
+    @include titles($title-font, 2rem, 1px, $text-color);
+    > span {
+        color: $red-color;
+    }
+}
+
+.contact-btn {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: $red-color;
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.other-contacts {
+    width: 100px;
+    height: fit-content;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkedin-logo, .github-logo {
+    width: 40px;
+    height: 40px;
+    filter: invert(26%) sepia(85%) saturate(5278%) hue-rotate(341deg) brightness(100%) contrast(103%);
+    transition: .1s ease;
+    &:hover {
+        filter: invert(92%) sepia(9%) saturate(272%) hue-rotate(184deg) brightness(106%) contrast(91%);
+        transition: .1s ease;
+    }
+}

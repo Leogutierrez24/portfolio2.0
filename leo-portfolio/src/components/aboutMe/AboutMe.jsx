@@ -1,12 +1,6 @@
 import React from "react";
 import './aboutMe.scss';
 import profilePic from "../assets/images/padding-img-2.avif";
-import reactLogo from "../assets/images/tech-logos/react-logo.png";
-import htmlLogo from "../assets/images/tech-logos/html-logo.png";
-import jsLogo from "../assets/images/tech-logos/js-logo.png";
-import nodeLogo from "../assets/images/tech-logos/nodejs-logo.png";
-import fbLogo from "../assets/images/tech-logos/firebase-logo.png";
-import cssLogo from "../assets/images/tech-logos/css-logo.svg";
 
 const AboutMe = () => {
     return(
@@ -21,33 +15,6 @@ const AboutMe = () => {
                     <figure>
                         <img src={profilePic} alt="profile-img" className="profile-img" />
                     </figure>
-                </div>
-            </div>
-            <div className="skill-container">
-                <h3 className="skills-title">My <span>skills</span></h3>
-                <div className="techs-container">
-                    <div className="techs-box-a">
-                        <div>
-                            <img className="techs-logo" src={cssLogo} alt="" />
-                        </div>
-                        <div>
-                            <img className="techs-logo" src={htmlLogo} alt="" />
-                        </div>
-                        <div>
-                            <img className="techs-logo" src={jsLogo} alt="" />
-                        </div>
-                    </div>
-                    <div className="techs-box-b">
-                        <div>
-                            <img className="techs-logo" src={reactLogo} alt="" />
-                        </div>
-                        <div>
-                            <img className="techs-logo" src={fbLogo} alt="" />
-                        </div>
-                        <div>
-                            <img className="techs-logo" src={nodeLogo} alt="" />
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

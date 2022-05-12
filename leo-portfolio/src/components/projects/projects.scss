@@ -23,11 +23,16 @@
     }
 }
 
-.project {
+.project01, .project02, .project03 {
     width: 350px;
     height: 400px;
     border-radius: 3px;
-    background-image: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)), url('../assets/images/padding-img.avif');
+}
+
+.project02 {
+    background-image: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)), url('../assets/images/projects-img/project_01.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .projects-links {
