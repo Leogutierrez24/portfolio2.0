@@ -15,14 +15,19 @@
 
 .about-leftSide {
     width: 70%;
+    padding-right: 18px;
 }
 
 .about-rightSide {
     width: 30%;
+    min-width: 300px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
     > figure {
+        min-width: 300px;
+        min-height: 400px;
         margin: 0;
-        display: flex;
-        justify-content: flex-end;
     }
 }
 
@@ -34,12 +39,24 @@
     }
 }
 
-.aboutMe-text {
+.aboutMe-text, .about-link {
     font-family: $text-font;
     color: $text-color;
 }
 
+.about-link {
+    text-decoration: none;
+    > span {color: $red-color;}
+}
+
 .profile-img {
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+@media all and (max-width: 1310px){
+    .aboutMe {
+        padding: 0 80px;
+    }
 }

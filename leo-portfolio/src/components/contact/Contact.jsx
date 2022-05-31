@@ -22,10 +22,10 @@ const Contact = () => {
                 <button className="contact-btn">send</button>
             </div>
             <div className="other-contacts">
-                <a href="https://www.linkedin.com/in/leonel-gutierrez97/">
+                <a href="https://www.linkedin.com/in/leonel-gutierrez97/" target="_blank" rel="noreferrer noopener">
                     <img src={linkedin} alt="linkedin" className="linkedin-logo" />
                 </a>
-                <a href="https://github.com/Leogutierrez24">
+                <a href="https://github.com/Leogutierrez24" target="_blank" rel="noreferrer noopener">
                     <img src={github} alt="github" className="github-logo" />
                 </a>
             </div>

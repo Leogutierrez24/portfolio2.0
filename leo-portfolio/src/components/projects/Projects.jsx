@@ -9,10 +9,10 @@ const Projects = () => {
                 <h3 className="projects-title">My <span>Projects</span></h3>
                 <div className="projects-list">
                     <div className="project01">
-                        <Link to="/" className="projects-links">See project</Link>
+                        <a href="https://github.com/Leogutierrez24/pasokon-ecommerce" className="projects-links" target="_blank" rel="noreferrer">See project</a>
                     </div>
                     <div className="project02">
-                        <a href="https://github.com/Leogutierrez24/calculator" className="projects-links">See project</a>
+                        <a href="https://github.com/Leogutierrez24/calculator" className="projects-links" target="_blank" rel="noreferrer">See project</a>
                     </div>
                     <div className="project03">
                         <Link to="/" className="projects-links">See project</Link>

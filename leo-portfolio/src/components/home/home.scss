@@ -2,7 +2,7 @@
 
 .home {
     width: 100%;
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     padding: 0 100px;
     display: flex;
     justify-content: center;
@@ -23,5 +23,31 @@
     @include titles($title-font, 2.5rem, default, $text-color);
     > span {
         color: $red-color;
+    }
+}
+
+@media all and (max-width: 768px){
+    .home {
+        padding: 0 50px;
+    }
+}
+
+@media all and (max-width: 624px){
+    .home {
+        padding: 0 25px;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.6rem;
+    }
+}
+
+@media all and (max-width: 375px){
+    .home {
+        padding: 0 12.5px;
     }
 }
