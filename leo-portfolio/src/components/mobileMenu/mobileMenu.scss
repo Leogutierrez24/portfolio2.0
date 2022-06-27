@@ -5,14 +5,14 @@
     height: 100vh;
     background-color: transparent;
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
 }
 
 .mobile-menu {
-    width: 40%;
+    width: 250px;
     height: 100%;
     background-color: $text-color;
     display: flex;
@@ -40,18 +40,37 @@
     height: 20px;
 }
 
+#contact-btn {
+    color: $text-color;
+    background-color: $red-color;
+    &:active {
+        color: $red-color;
+        background-color: $text-color;
+    }
+}
+
 .opened {
     transform: translateX(0);
-    transition: .3s;
+    transition: .4s;
 }
 
 .closed {
     transform: translateX(-620px);
-    transition: .3s;
+    transition: .4s;
 }
 
-@media all and (min-width: 624px){
+@media all and (max-width: 624px){
     .mobile-menu__container {
         display: block;
+    }
+}
+
+@media all and (max-width: 375px){
+    .mobile-menu {
+        width: 200px;
+    }
+
+    .mobile-menu__link {
+        padding-left: 50px;
     }
 }

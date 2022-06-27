@@ -51,12 +51,44 @@
 
 .profile-img {
     width: 100%;
-    height: 100%;
+    min-width: 300px;
+    min-height: 404px;
     border-radius: 3px;
 }
 
 @media all and (max-width: 1310px){
     .aboutMe {
         padding: 0 80px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .aboutMe {
+        padding: 0 50px;
+    }
+}
+
+@media all and (max-width: 624px){
+    .aboutMe {
+        padding: 0 25px;
+    }
+
+    .aboutMe-title {
+        font-size: 1.8rem;
+    }
+
+    .aboutMe-container {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    .about-leftSide {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .about-rightSide {
+        width: 100%;
     }
 }

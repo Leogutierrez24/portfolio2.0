@@ -58,8 +58,13 @@
     }
 }
 
+.mobile-menu__button {
+    display: none;
+}
+
 @media all and (max-width: 624px){
     .topNav-container {
+        padding: 0 40px;
         align-items: center;
     }
 
@@ -82,5 +87,11 @@
         width: 20px;
         height: 20px;
         filter: invert(100%) sepia(1%) saturate(2579%) hue-rotate(125deg) brightness(89%) contrast(117%);
+    }
+}
+
+@media all and (max-width: 375px){
+    .topNav-container {
+        padding: 0 20px;
     }
 }

@@ -12,7 +12,7 @@ const MobileMenu = (props) => {
                 <Link to="/" className="mobile-menu__link" onClick={props.handleMenuClose}>Home</Link>
                 <Link to="/about-me" className="mobile-menu__link" onClick={props.handleMenuClose}>About Me</Link>
                 <Link to="/projects" className="mobile-menu__link" onClick={props.handleMenuClose}>Projects</Link>
-                <Link to="/contact" className="mobile-menu__link" onClick={props.handleMenuClose}>Contact</Link>
+                <Link to="/contact" className="mobile-menu__link" onClick={props.handleMenuClose} id="contact-btn">Contact</Link>
             </div>
         </div>
     );
