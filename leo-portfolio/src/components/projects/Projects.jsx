@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './projects.scss';
 
 const Projects = () => {
@@ -14,9 +13,9 @@ const Projects = () => {
                     <div className="project02">
                         <a href="https://github.com/Leogutierrez24/calculator" className="projects-links" target="_blank" rel="noreferrer">See project</a>
                     </div>
-                    <div className="project03">
+                    {/* <div className="project03">
                         <Link to="/" className="projects-links">See project</Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

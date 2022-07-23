@@ -1,9 +1,20 @@
-import React from "react";
+import {React, useState} from "react";
+import Modal from "../modal/Modal";
 import github from "../assets/images/contact-icons/github.svg";
 import linkedin from "../assets/images/contact-icons/linkedin.svg";
 import "./contact.scss";
 
 const Contact = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleModal = () => {
+        setShowModal(true);
+    };
+
+    const handleModalClose = () => {
+        setShowModal(false);
+    };
+
     return(
         <div className="contact">
             <h3 className="contact-title">Contact me <span>here</span>!</h3>
@@ -19,7 +30,7 @@ const Contact = () => {
                         <textarea cols="20" id="message"></textarea>
                     </label>
                 </form>
-                <button className="contact-btn">send</button>
+                <button className="contact-btn" onClick={handleModal}>send</button>
             </div>
             <div className="other-contacts">
                 <a href="https://www.linkedin.com/in/leonel-gutierrez97/" target="_blank" rel="noreferrer noopener">
@@ -29,6 +40,9 @@ const Contact = () => {
                     <img src={github} alt="github" className="github-logo" />
                 </a>
             </div>
+            {
+                showModal === true && <Modal handleModalClose={handleModalClose} />
+            }
         </div>
     );
 };

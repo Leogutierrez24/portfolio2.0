@@ -1,0 +1,85 @@
+@import '../assets/scss/variables';
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background-color: #00000025;
+    font-family: $text-font;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    width: 600px;
+    height: 300px;
+    margin: 250px auto;
+    padding: 15px;
+    color: $background-color;
+    background-color: $text-color;
+    border-radius: 5px;
+    display: flex;
+    flex-direction : column;
+}
+
+.modal-header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    > span {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+        &:active {
+            background-color: #00000025;
+            transition: .2s;
+        }
+    }
+}
+
+.modal-body {
+    width: 100%;
+    height: 90%;
+}
+
+.modal-message {
+    > a {
+        color: $red-color;
+        text-decoration: none;
+    }
+}
+
+.modal-button {
+    filter: invert(42%) sepia(79%) saturate(7479%) hue-rotate(340deg) brightness(98%) contrast(106%);
+}
+
+@media all and (max-width: 768px){
+    .modal {
+        margin: 125px auto;
+    }
+}
+
+@media all and (max-width: 624px){
+    .modal {
+        width: 370px;
+        height: 280px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .modal {
+        width: 300px;
+        height: 250px;
+    }
+
+    .modal-message {
+        font-size: 1rem;
+    }
+}
